@@ -123,7 +123,7 @@ ts_plot(tuitsMeliJG_CL, "15 minutes") +
     caption = "\nSource: Datos recolectados de la API REST de Twitter via rtweet" )
 
 
-## Paso 11: Fuentes de publicación
+## Paso 12: Fuentes de publicación
 
 tuitsMeliJG_CL %>% group_by(source)%>% 
   summarise(Total=n()) %>% arrange(desc(Total)) %>% head(10) %>%
@@ -132,7 +132,7 @@ tuitsMeliJG_CL %>% group_by(source)%>%
        subtitle="Tuits agrupados por fuente de publicación", 
        caption = "\nSource: Datos recolectados de la API REST de Twitter via rtweet")
 
-## Paso 4: Formas de hacer backup
+## Paso 13: Formas de hacer backup
 
 save.image("backup.RData")
 
